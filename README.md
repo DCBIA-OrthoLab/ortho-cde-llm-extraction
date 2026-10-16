@@ -9,6 +9,20 @@ data, fine-tunes a model to extract the same structured fields from raw notes,
 runs the model on held-out patients, and scores its output against the human
 annotations (exact-match + semantic similarity).
 
+## Authors
+
+This pipeline was written by **[Paul-dumont](https://github.com/Paul-dumont)**,
+who developed it from December 2025 to July 2026, starting from an initial
+version by **[PyGuy2](https://github.com/PyGuy2)**.
+
+This repository starts with a single commit because it was republished
+without its git history, which contains the private training data. That is
+why GitHub lists **[Jules-GP](https://github.com/Jules-GP)** as the only
+contributor here: Jules-GP prepared this public version (removed the data,
+fixed the paths and bugs a fresh clone runs into, pinned the dependencies,
+tested the pipeline end to end on synthetic notes) but did not write the
+pipeline.
+
 ## Repository layout
 
 ```
