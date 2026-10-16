@@ -48,7 +48,7 @@ from utils import grouped_shuffle_split
 # Same as run_model.py, but the model is downloaded from the HF Hub repo
 # below instead of a local folder. That repo only ships a q4_k_m GGUF
 # (no 16bit weights), so this script only supports 4bit inference.
-HF_REPO_ID = "DCBIA-OrthoLab/Meta-Llama-3.1-8B-Instruct-Ortho"
+HF_REPO_ID = "DCBIA-OrthoLab/Llama-3.1-8B-Instruct-Ortho"
 HF_GGUF_FILENAME = "model-q4_k_m.gguf"
 
 
@@ -279,5 +279,5 @@ def main(table_number: int, mode: str, eval_set: str = "test", model_type: str =
 
 if __name__ == "__main__":
     # To run inference on the FULL DATASET, use full_dataset=True
-    # Model loaded from the HF Hub (DCBIA-OrthoLab/Meta-Llama-3.1-8B-Instruct-Ortho), 4bit only
+    # Model loaded from the HF Hub (DCBIA-OrthoLab/Llama-3.1-8B-Instruct-Ortho), 4bit only
     main(table_number="5", mode="no_prompt", eval_set="test", model_type="llama", full_dataset=False)
