@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# IDEs and editors
+.vscode/
+*.swp
+
+# OS files
+.DS_Store
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Temporary files
+tmp/
+_unsloth_sentencepiece_temp/
+
+#output
+model/
+wandb/
+unsloth_compiled_cache/
+.hf_cache/
+
+# Large model files
+*.gguf
+*.safetensors
+*.bin
+*.pt
+
+
+# Data - never commit patient data. Every stage of data/ stays local,
+# including the manual annotation spreadsheets in data/1_manual_table/.
+data/
+
+# Reports that data_scripts/print_values.py writes next to itself; they are
+# computed from the data and can quote its values.
+data_scripts/*.txt

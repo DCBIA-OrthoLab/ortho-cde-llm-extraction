@@ -1,0 +1,26 @@
+# Versions the full pipeline (data build, training, inference, evaluation,
+# figures) was tested with, on Python 3.11 and CUDA 12.6.
+# The code relies on the older trl API (DataCollatorForCompletionOnlyLM,
+# SFTTrainer arguments) and on transformers 4.x, so do not upgrade these
+# two without testing.
+unsloth==2025.6.12
+unsloth_zoo==2025.6.8
+torch==2.7.0
+xformers==0.0.30
+transformers==4.52.4
+trl==0.19.0
+peft==0.15.2
+accelerate==1.7.0
+bitsandbytes==0.46.0
+datasets==3.6.0
+sentence-transformers==4.1.0
+pandas
+openpyxl
+python-dateutil
+matplotlib
+wandb
+optuna
+# Only needed for 4-bit GGUF inference (run_model.py precision="4bit" and
+# advanced/run_model_hf.py); build it with CUDA support.
+# llama-cpp-python
+huggingface_hub
