@@ -160,3 +160,10 @@ to train without an account. For 4-bit GGUF inference, also install
 - The figure scripts in `graph/` read fixed file names
   (`result_llama_no_prompt6_*.xlsx`, `extraction_features_no_prompt6_all.xlsx`);
   edit them to point at your own runs.
+
+## License
+
+The code in this repository is released under the [MIT License](LICENSE).
+The models it fine-tunes keep their own licenses (Llama 3.1 Community
+License, Apache 2.0 for Qwen 2.5, MIT for Phi-3.5), which apply to any model
+trained with it.
